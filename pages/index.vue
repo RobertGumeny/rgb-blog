@@ -2,35 +2,39 @@
   <div class="container">
     <div>
       <logo />
-      <h1 class="title">
-        rgb-blog
-      </h1>
+      <h1 class="title">Who am I?</h1>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
           target="_blank"
           rel="noopener noreferrer"
           class="button--green"
-        >
-          Documentation
-        </a>
+        >Documentation</a>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey"
-        >
-          GitHub
-        </a>
+        >GitHub</a>
       </div>
+    </div>
+    <div>
+      <ul>
+        <li v-for="post in posts" :key="post.id">{{ post.title }}</li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
+import { getPosts } from '../api/posts';
 import Logo from '~/components/Logo.vue'
 
 export default {
+  async asyncData() {
+    const posts = await getPosts();
+    return { posts: posts }
+  },
   components: {
     Logo
   }
@@ -48,16 +52,8 @@ export default {
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
