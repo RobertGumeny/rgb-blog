@@ -19,7 +19,7 @@ export default {
 
 html {
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -66,21 +66,19 @@ header {
   }
 }
 
-// Extra small screens
-
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 360px) {
   body {
     font-size: 14px;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   body {
     font-size: 20px;
   }
