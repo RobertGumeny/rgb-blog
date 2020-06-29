@@ -1,20 +1,24 @@
 <template>
   <div>
+    <Navbar />
     <nuxt />
   </div>
 </template>
 
-<style>
+<script>
+import Navbar from "../components/Navbar"
+export default {
+  components: {
+    Navbar
+  }
+}
+</script>
+
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap");
+
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -31,32 +35,54 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+header {
+  background: $secondary-bg;
+  padding: 1em 0;
+  text-align: center;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+
+      li a {
+        font-weight: normal;
+        padding: 0.5em;
+      }
+    }
+  }
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+// Extra small screens
+
+@media only screen and (max-width: 360px) {
+  body {
+    font-size: 14px;
+  }
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
 }
 </style>
