@@ -1,5 +1,5 @@
 <template>
-  <div class="blogPosts">
+  <div class="blog-posts">
     <div>
       <ul>
         <li v-for="post in posts" :key="post.id">

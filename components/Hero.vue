@@ -14,8 +14,8 @@
           <strong>user-friendly</strong> websites and applications.
         </p>
         <div class="cta-row">
-          <nuxt-link to="#contact" class="cta-one">Contact Me</nuxt-link>
-          <nuxt-link to="#portfolio" class="cta-two">View Portfolio</nuxt-link>
+          <a href="#contact" class="cta-one">Contact Me</a>
+          <a href="#portfolio" class="cta-two">View Portfolio</a>
         </div>
       </div>
     </div>
@@ -39,11 +39,11 @@ export default {
 <style lang="scss" scoped>
 .hero-section {
   font-family: "Open Sans", sans-serif;
-  background: url("../assets/images/hero-img.jpg") top center;
+  background: url("../assets/images/hero-img-2.jpg") top center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 h1 {
@@ -54,7 +54,7 @@ h1 span {
   color: $secondary-color;
 }
 .content {
-  margin: 4em auto;
+  margin: 5em auto;
   width: 70%;
 }
 
@@ -92,9 +92,6 @@ h1 span {
   border-radius: 7.5px;
   cursor: pointer;
   text-decoration: none;
-}
-
-@media only screen and (min-width: 360px) {
 }
 
 @media only screen and (min-width: 576px) {
