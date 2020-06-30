@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio-item {
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
 .portfolio-item p {
   margin-bottom: 0.5em;
@@ -60,9 +60,12 @@ p.item-details {
 }
 
 @media only screen and (min-width: 768px) {
+  .portfolio-item {
+    margin-bottom: 0em;
+  }
   .item-image {
     width: 100%;
-    height: 16em;
+    height: 14em;
   }
 }
 
@@ -74,6 +77,11 @@ p.item-details {
 @media only screen and (min-width: 1200px) {
   .item-image {
     height: 18em;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .item-image {
+    height: 20em;
   }
 }
 </style>

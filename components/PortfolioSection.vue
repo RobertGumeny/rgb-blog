@@ -97,7 +97,7 @@ h1:after {
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3em;
+    grid-gap: 4em;
   }
 }
 
