@@ -7,11 +7,27 @@ const api = new GhostContentAPI({
   version: "v3"
 });
 
+
+// Get all posts
 export async function getPosts() {
   return await api.posts
     .browse({
       limit: "all",
       include: "tags,authors"
+    })
+    .catch(err => {
+      console.error(err);
+    });
+}
+
+// Get 4 posts for home page preview
+
+export async function getPreviewPosts() {
+  return await api.posts
+    .browse({
+      limit: "4",
+      include: "tags,authors",
+      order: `published_at DESC`
     })
     .catch(err => {
       console.error(err);

@@ -64,8 +64,6 @@ export default {
 
 
 <style lang="scss" scoped>
-// Title styling
-
 .portfolio-section {
   font-family: "Open Sans", sans-serif;
 }
@@ -99,7 +97,7 @@ h1:after {
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5em;
+    grid-gap: 3em;
   }
 }
 

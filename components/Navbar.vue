@@ -57,6 +57,17 @@ export default {
 
 .container {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 1.5em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .g {
+    margin-left: -14px;
+  }
 }
 </style>

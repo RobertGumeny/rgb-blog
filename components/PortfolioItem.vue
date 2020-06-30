@@ -6,7 +6,7 @@
       <a :href="itemData.url">View Project</a> |
       <a :href="itemData.source">Source Code</a>
     </p>
-    <img class="item-image" :src="itemData.img" alt="Inspire App" />
+    <img class="item-image" :src="itemData.img" :alt="itemData.name" />
     <p class="item-description">{{itemData.description}}</p>
   </div>
 </template>
