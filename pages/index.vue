@@ -38,6 +38,7 @@ export default {
   padding: 1em;
   margin: 0 1.5em;
 }
+
 h1.blog-header {
   position: relative;
   margin: 1.5em 0;

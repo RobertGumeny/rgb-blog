@@ -79,7 +79,7 @@ h1 span {
   border: none;
   color: #fff;
   padding: 5px 15px;
-  border-radius: 7.5px;
+  border-radius: 12.5px;
   margin-right: 0.5em;
   cursor: pointer;
   text-decoration: none;
@@ -89,7 +89,7 @@ h1 span {
   border: 1px solid $secondary-color;
   color: $secondary-color;
   padding: 5px 15px;
-  border-radius: 7.5px;
+  border-radius: 12.5px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -112,6 +112,14 @@ h1 span {
   .content {
     margin: 8em 8em;
     width: 50%;
+  }
+  .hero-section {
+    height: 80vh;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .hero-section {
+    height: 90vh;
   }
 }
 </style>
