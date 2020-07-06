@@ -51,7 +51,7 @@ export default {
 }
 
 .g {
-  margin-left: -11px;
+  margin-left: -9px;
   color: $secondary-color;
 }
 

@@ -76,6 +76,7 @@ form button {
 }
 
 label {
+  font-size: 1.2em;
   display: block;
 }
 
