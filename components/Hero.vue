@@ -43,7 +43,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 90vh;
+  height: 60vh;
 }
 
 h1 {

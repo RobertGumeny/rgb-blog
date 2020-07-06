@@ -7,6 +7,7 @@
       <section class="blog-section">
         <BlogPreview v-for="post in posts" :postData="post" :key="post.name" />
       </section>
+      <ContactSection id="contact" />
     </div>
   </div>
 </template>
@@ -15,7 +16,8 @@
 import Hero from "../components/Hero"
 import PortfolioSection from "../components/PortfolioSection"
 import BlogPreview from "../components/BlogPreview"
-import { getPreviewPosts } from '../api/posts';
+import ContactSection from "../components/ContactSection"
+import { getPreviewPosts } from '../api/posts'
 
 export default {
   async asyncData() {
@@ -26,6 +28,7 @@ export default {
     Hero,
     PortfolioSection,
     BlogPreview,
+    ContactSection
   }
 }
 </script>
@@ -45,7 +48,7 @@ h1.blog-header:after {
   height: 2px;
   bottom: 0px;
   left: 1px;
-  width: 6.4em;
+  width: 6.8em;
   background-color: $secondary-color;
 }
 
@@ -66,6 +69,9 @@ h1.blog-header:after {
 @media only screen and (min-width: 992px) {
   .container {
     margin: 0 3em;
+  }
+  h1.blog-header:after {
+    height: 4px;
   }
 }
 </style>
