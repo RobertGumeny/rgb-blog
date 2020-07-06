@@ -92,19 +92,6 @@ textarea {
   box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.04);
 }
 
-input[type="text"] {
-  background-image: url("../assets/images/icons/user.svg");
-  background-position: 2px 4.5px;
-  background-repeat: no-repeat;
-  padding-left: 30px;
-}
-input[type="email"] {
-  background-image: url("../assets/images/icons/mail.svg");
-  background-position: 2px 4.5px;
-  background-repeat: no-repeat;
-  padding-left: 30px;
-}
-
 textarea {
   resize: none;
 }

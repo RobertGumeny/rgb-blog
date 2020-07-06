@@ -43,7 +43,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 60vh;
+  height: 100vh;
 }
 
 h1 {
@@ -112,14 +112,6 @@ h1 span {
   .content {
     margin: 8em 8em;
     width: 50%;
-  }
-  .hero-section {
-    height: 80vh;
-  }
-}
-@media only screen and (min-width: 1100px) {
-  .hero-section {
-    height: 90vh;
   }
 }
 </style>
