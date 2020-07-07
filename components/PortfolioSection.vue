@@ -1,6 +1,7 @@
 <template>
   <div class="portfolio-section">
     <h1>Portfolio</h1>
+
     <div class="wrapper">
       <PortfolioItem v-for="project in projects" :itemData="project" :key="project.name" />
     </div>
@@ -66,19 +67,14 @@ export default {
 <style lang="scss" scoped>
 .portfolio-section {
   font-family: "Open Sans", sans-serif;
+  padding-top: 80px;
 }
-h1 {
-  position: relative;
-  margin-bottom: 1.5em;
-}
-h1:after {
-  position: absolute;
-  content: "";
+
+.title-underline {
+  width: 7.5em;
   height: 2px;
-  bottom: 0px;
-  left: 1px;
-  width: 3.6em;
-  background-color: $secondary-color;
+  margin: 0 0 2.5em;
+  background: $secondary-color;
 }
 
 //Media Queries

@@ -3,10 +3,10 @@
     <div class="hero-section">
       <div class="content">
         <p class="greeting">Hello, my name is</p>
-        <h1>
+        <p class="name">
           Robert
           <span>Gumeny</span>
-        </h1>
+        </p>
         <p class="intro">
           I am a web designer and developer with a passion for creating
           <strong>simple</strong>,
@@ -44,13 +44,15 @@ export default {
   background-size: cover;
   width: 100%;
   height: 100vh;
+  padding-top: 5em;
 }
 
-h1 {
+p.name {
   margin-top: -5px;
+  font-size: 2.6em;
 }
 
-h1 span {
+p.name span {
   color: $secondary-color;
 }
 .content {

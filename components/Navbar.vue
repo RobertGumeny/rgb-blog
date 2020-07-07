@@ -13,13 +13,13 @@
                 <nuxt-link to="/">Home</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="#portfolio">Portfolio</nuxt-link>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li>
                 <nuxt-link to="/blog">Blog</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="#contact">Contact</nuxt-link>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </nav>

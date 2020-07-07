@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar />
+    <Navbar id="navbar" />
     <nuxt />
   </div>
 </template>
@@ -26,6 +26,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -33,6 +34,12 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 header {
