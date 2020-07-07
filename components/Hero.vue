@@ -44,16 +44,18 @@ export default {
   background-size: cover;
   width: 100%;
   height: 100vh;
-  padding-top: 5em;
+  padding-top: 6em;
 }
 
 p.name {
   margin-top: -5px;
-  font-size: 2.6em;
+  font-size: 2.2em;
+  font-weight: bold;
 }
 
 p.name span {
   color: $secondary-color;
+  margin-left: -2px;
 }
 .content {
   margin: 5em auto;

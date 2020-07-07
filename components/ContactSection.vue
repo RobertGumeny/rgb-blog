@@ -47,6 +47,7 @@ export default {
 .contact-section {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 1.5em;
+  padding-top: 80px;
 }
 
 .title-underline {
