@@ -1,12 +1,12 @@
 <template>
-  <div class="portfolio-item">
+  <div class="portfolio-item card">
+    <img class="item-image" :src="itemData.img" :alt="itemData.name" />
     <p class="item-name">{{itemData.name}}</p>
     <p class="item-details">{{itemData.details}}</p>
     <p class="item-links">
       <a :href="itemData.url">View Project</a> |
       <a :href="itemData.source">Source Code</a>
     </p>
-    <img class="item-image" :src="itemData.img" :alt="itemData.name" />
     <p class="item-description">{{itemData.description}}</p>
   </div>
 </template>
@@ -27,6 +27,12 @@ export default {
 
 
 <style lang="scss" scoped>
+.card {
+  background: $primary-bg;
+  padding: 0.8em;
+  border: 1px solid #f9f9f9;
+}
+
 .portfolio-item {
   margin-bottom: 4em;
 }
@@ -50,7 +56,6 @@ p.item-details {
 
 .item-image {
   width: 100%;
-  height: auto;
 }
 
 @media only screen and (min-width: 576px) {

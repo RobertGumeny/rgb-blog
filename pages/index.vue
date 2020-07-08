@@ -1,16 +1,15 @@
 <template>
   <div>
     <Hero id="hero" />
-    <div class="container">
-      <PortfolioSection id="portfolio" />
 
-      <h1 class="blog-header">Latest Blog Posts</h1>
+    <PortfolioSection id="portfolio" />
 
-      <section class="blog-section">
-        <BlogPreview v-for="post in posts" :postData="post" :key="post.name" />
-      </section>
-      <ContactSection id="contact" />
-    </div>
+    <h1 class="blog-header">Latest Blog Posts</h1>
+
+    <section class="blog-section">
+      <BlogPreview v-for="post in posts" :postData="post" :key="post.name" />
+    </section>
+    <ContactSection id="contact" />
   </div>
 </template>
 
