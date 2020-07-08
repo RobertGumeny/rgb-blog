@@ -43,8 +43,9 @@ export default {
 
 <style lang="scss">
 h1 {
-  font-size: 2.2em;
+  font-size: 2.4em;
   margin: 1.5em 0;
+  font-family: "Oswald", sans-serif;
 }
 .container {
   padding: 1em;

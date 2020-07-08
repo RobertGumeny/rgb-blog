@@ -49,8 +49,9 @@ export default {
 
 p.name {
   margin-top: -5px;
-  font-size: 2.2em;
+  font-size: 2.4em;
   font-weight: bold;
+  font-family: "Oswald", sans-serif;
 }
 
 p.name span {
