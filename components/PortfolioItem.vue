@@ -29,8 +29,11 @@ export default {
 <style lang="scss" scoped>
 .card {
   background: $primary-bg;
-  padding: 0.8em;
+  padding: 1em;
+  border-radius: 2.5px;
   border: 1px solid #f9f9f9;
+  box-shadow: 0px -1px 3px rgba(49, 49, 49, 0.1),
+    1px 1px 3px rgba(49, 49, 49, 0.1);
 }
 
 .portfolio-item {
@@ -61,6 +64,10 @@ p.item-details {
 @media only screen and (min-width: 576px) {
   .item-image {
     height: auto;
+  }
+
+  .card {
+    padding: 1.2em;
   }
 }
 

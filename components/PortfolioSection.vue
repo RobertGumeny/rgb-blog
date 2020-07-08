@@ -67,8 +67,8 @@ export default {
 <style lang="scss" scoped>
 .portfolio-section {
   font-family: "Open Sans", sans-serif;
-  padding: 80px 1.5em 20px;
-  background: $secondary-bg;
+  padding-top: 80px;
+  background: $primary-bg;
 }
 
 .title-underline {
