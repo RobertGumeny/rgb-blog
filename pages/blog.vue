@@ -27,14 +27,24 @@ export default {
   padding: 80px 1.5em 0;
 }
 
-.display-area {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 4em;
-  margin-bottom: 1.5em;
-}
-
 h1 {
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .display-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4em;
+    margin-bottom: 1.5em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .display-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4em;
+    margin-bottom: 1.5em;
+  }
 }
 </style>
