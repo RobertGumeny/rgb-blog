@@ -13,7 +13,7 @@
                 <nuxt-link to="/">Home</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/#portfolio">Portfolio</nuxt-link>
+                <nuxt-link to="/portfolio">Portfolio</nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/blog">Blog</nuxt-link>

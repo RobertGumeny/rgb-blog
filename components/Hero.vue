@@ -15,7 +15,7 @@
         </p>
         <div class="cta-row">
           <nuxt-link to="/contact" class="cta-one">Contact Me</nuxt-link>
-          <a href="#portfolio" class="cta-two">View Portfolio</a>
+          <nuxt-link to="/portfolio" class="cta-two">View Portfolio</nuxt-link>
         </div>
       </div>
     </div>

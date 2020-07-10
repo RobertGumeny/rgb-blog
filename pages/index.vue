@@ -2,7 +2,6 @@
   <div>
     <Hero id="hero" />
     <div class="container">
-      <PortfolioSection id="portfolio" />
       <h1 class="blog-header">Latest Blog Posts</h1>
       <section class="blog-section">
         <BlogPreview v-for="post in posts" :postData="post" :key="post.name" />
@@ -13,7 +12,6 @@
 
 <script>
 import Hero from "../components/Hero"
-import PortfolioSection from "../components/PortfolioSection"
 import BlogPreview from "../components/BlogPreview"
 import { getPreviewPosts } from '../api/posts'
 
@@ -32,7 +30,6 @@ export default {
   },
   components: {
     Hero,
-    PortfolioSection,
     BlogPreview
   }
 }
