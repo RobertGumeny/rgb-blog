@@ -7,7 +7,6 @@
       <section class="blog-section">
         <BlogPreview v-for="post in posts" :postData="post" :key="post.name" />
       </section>
-      <ContactSection id="contact" />
     </div>
   </div>
 </template>
@@ -16,7 +15,6 @@
 import Hero from "../components/Hero"
 import PortfolioSection from "../components/PortfolioSection"
 import BlogPreview from "../components/BlogPreview"
-import ContactSection from "../components/ContactSection"
 import { getPreviewPosts } from '../api/posts'
 
 export default {
@@ -35,8 +33,7 @@ export default {
   components: {
     Hero,
     PortfolioSection,
-    BlogPreview,
-    ContactSection
+    BlogPreview
   }
 }
 </script>
@@ -44,7 +41,7 @@ export default {
 <style lang="scss">
 h1 {
   font-size: 2.4em;
-  margin: 1.5em 0;
+  margin-top: 1em;
   font-family: "Oswald", sans-serif;
 }
 .container {

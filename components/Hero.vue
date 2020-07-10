@@ -14,7 +14,7 @@
           <strong>user-friendly</strong> websites and applications.
         </p>
         <div class="cta-row">
-          <a href="#contact" class="cta-one">Contact Me</a>
+          <nuxt-link to="/contact" class="cta-one">Contact Me</nuxt-link>
           <a href="#portfolio" class="cta-two">View Portfolio</a>
         </div>
       </div>

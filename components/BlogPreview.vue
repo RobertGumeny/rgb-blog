@@ -49,7 +49,7 @@ p.blog-title {
   margin-bottom: 0.2em;
 }
 p.blog-author {
-  margin-top: 0.2em;
+  margin-bottom: 0.2em;
   font-size: 1.1em;
   font-style: italic;
 }
