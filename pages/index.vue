@@ -52,6 +52,10 @@ h1:after {
   width: 6.2em;
 }
 
+.blog-header {
+  margin-bottom: 1em;
+}
+
 .container {
   padding: 1em;
   margin: 0 1.8em;

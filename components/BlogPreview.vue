@@ -1,12 +1,12 @@
 <template>
-  <div class="blog-preview card">
+  <nuxt-link :to=" { path: postData.slug }" class="blog-preview card">
     <img :src="postData.feature_image" :alt="postData.title" />
     <div class="blog-text">
       <p class="blog-title">{{ postData.title }}</p>
       <p class="blog-author">{{ postData.authors[0].name }}</p>
       <p class="blog-excerpt">{{ postData.custom_excerpt }}</p>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 
@@ -25,6 +25,11 @@ export default {
 
 
 <style lang="scss" scoped>
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
 .card {
   background: $primary-bg;
   border-radius: 5px;
