@@ -57,6 +57,10 @@ export default {
   border: 2px solid $secondary-color;
 }
 
+.contact-section h1:after {
+  width: 4.4em;
+}
+
 // Styling for the form
 
 form {

@@ -68,6 +68,11 @@ export default {
 .portfolio-section {
   font-family: "Open Sans", sans-serif;
   background: $primary-bg;
+  margin-bottom: 2em;
+}
+
+.portfolio-section h1:after {
+  width: 3em;
 }
 
 .title-underline {

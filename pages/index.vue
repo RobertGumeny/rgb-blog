@@ -41,6 +41,17 @@ h1 {
   margin: 0.25em 0 0.5em;
   font-family: "Oswald", sans-serif;
 }
+
+h1:after {
+  background: $secondary-color;
+  bottom: 5px;
+  content: "";
+  display: block;
+  height: 4px;
+  position: relative;
+  width: 6.2em;
+}
+
 .container {
   padding: 1em;
   margin: 0 1.8em;
@@ -63,6 +74,11 @@ h1 {
   h1 {
     text-align: center;
     margin-top: 0.65em;
+  }
+
+  h1:after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
