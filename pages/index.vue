@@ -62,12 +62,17 @@ h1 {
 
   h1 {
     text-align: center;
+    margin-top: 0.65em;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .container {
     margin: 0 3em;
+  }
+
+  h1 {
+    margin-top: 1em;
   }
 }
 </style>
