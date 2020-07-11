@@ -67,7 +67,6 @@ export default {
 <style lang="scss" scoped>
 .portfolio-section {
   font-family: "Open Sans", sans-serif;
-  padding-top: 80px;
   background: $primary-bg;
 }
 
