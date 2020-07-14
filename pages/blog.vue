@@ -1,8 +1,15 @@
 <template>
-  <div class="container">
-    <h1 class="blog-header">Robert's Blog</h1>
+  <div class="blog">
+    <section class="blog-hero">
+      <h1 class="blog-header">Robert's Blog</h1>
+    </section>
     <div class="display-area">
-      <BlogPreview v-for="post in posts" :postData="post" :key="post.name" />
+      <BlogPreview
+        v-for="post in posts"
+        :postData="post"
+        :postDate="post.dateFormatted"
+        :key="post.name"
+      />
     </div>
   </div>
 </template>
@@ -14,6 +21,16 @@ import { getPosts } from '../api/posts'
 export default {
   async asyncData() {
     const posts = await getPosts();
+    posts.map(post => {
+      const options = {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      };
+
+      post.dateFormatted = new Intl.DateTimeFormat('en-US', options)
+        .format(new Date(post.published_at));
+    });
     return { posts: posts }
   },
   components: {
@@ -23,8 +40,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  padding: 80px 1.5em 0;
+.blog-hero {
+  background: url("../assets/images/blog-hero-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 45vh;
+  padding-top: 6em;
+}
+
+.display-area {
+  padding: 2em 1.5em;
 }
 
 .blog-header:after {

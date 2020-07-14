@@ -2,9 +2,15 @@
   <nuxt-link :to=" { path: postData.slug }" class="blog-preview card">
     <img :src="postData.feature_image" :alt="postData.title" />
     <div class="blog-text">
-      <p class="blog-tags" v-for="tag in tags" :key="tag.id">{{ tag.name }}</p>
+      <section class="tag-row">
+        <p class="blog-tags" v-for="tag in tags" :key="tag.id">{{ tag.name }}</p>
+      </section>
       <p class="blog-title">{{ postData.title }}</p>
       <p class="blog-excerpt">{{ postData.custom_excerpt }}</p>
+      <section class="date-readtime">
+        <p class="blog-date">{{ postDate }}</p>
+        <p class="blog-readtime">| {{ postData.reading_time }} minute read</p>
+      </section>
     </div>
   </nuxt-link>
 </template>
@@ -15,7 +21,7 @@ import moment from 'moment';
 
 export default {
   name: 'blog-preview',
-  props: ["postData"],
+  props: ["postData", "postDate"],
   data() {
     return {
       tags: this.postData.tags
@@ -45,6 +51,10 @@ img {
   width: 100%;
 }
 
+.tag-row {
+  margin-bottom: 1em;
+}
+
 .blog-preview {
   margin-bottom: 4em;
 }
@@ -57,10 +67,29 @@ p.blog-title {
   font-size: 1.4em;
   margin-bottom: 0;
 }
+.date-readtime {
+  display: flex;
+  justify-content: start;
+  color: $secondary-color;
+  font-size: 0.8em;
+  margin-top: 1em;
+}
 p.blog-date {
-  margin-bottom: 0.2em;
-  font-size: 0.9em;
   font-style: italic;
+}
+p.blog-readtime {
+  margin-left: 0.6em;
+}
+p.blog-tags {
+  font-size: 0.8em;
+  font-weight: bold;
+  display: inline;
+  margin: 2.5px;
+  background-color: $primary-bg;
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+  padding: 2.5px 7.5px;
+  border-radius: 15px;
 }
 
 @media only screen and (min-width: 768px) {

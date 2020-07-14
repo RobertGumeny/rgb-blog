@@ -4,7 +4,12 @@
     <div class="container">
       <h1 class="blog-header">Latest Blog Posts</h1>
       <section class="blog-section">
-        <BlogPreview v-for="post in posts" :postData="post" :key="post.name" />
+        <BlogPreview
+          v-for="post in posts"
+          :postData="post"
+          :postDate="post.dateFormatted"
+          :key="post.name"
+        />
       </section>
     </div>
   </div>
@@ -18,7 +23,17 @@ import { getPreviewPosts } from '../api/posts'
 export default {
   async asyncData() {
     const posts = await getPreviewPosts();
-    return { posts: posts }
+    posts.map(post => {
+      const options = {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      };
+
+      post.dateFormatted = new Intl.DateTimeFormat('en-US', options)
+        .format(new Date(post.published_at));
+    });
+    return { posts: posts };
   },
   data() {
     return {
