@@ -37,6 +37,7 @@ export default {
 
 
 <style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
 .hero-section {
   font-family: "Open Sans", sans-serif;
   background: url("../assets/images/hero-img-2.jpg") top center;
