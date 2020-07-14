@@ -2,8 +2,8 @@
   <nuxt-link :to=" { path: postData.slug }" class="blog-preview card">
     <img :src="postData.feature_image" :alt="postData.title" />
     <div class="blog-text">
+      <p class="blog-tags" v-for="tag in tags" :key="tag.id">{{ tag.name }}</p>
       <p class="blog-title">{{ postData.title }}</p>
-      <p class="blog-author">{{ postData.authors[0].name }}</p>
       <p class="blog-excerpt">{{ postData.custom_excerpt }}</p>
     </div>
   </nuxt-link>
@@ -11,11 +11,15 @@
 
 
 <script>
+import moment from 'moment';
+
 export default {
   name: 'blog-preview',
   props: ["postData"],
   data() {
-    return {}
+    return {
+      tags: this.postData.tags
+    }
   },
   computed: {},
   methods: {},
@@ -51,11 +55,11 @@ img {
 p.blog-title {
   font-weight: bold;
   font-size: 1.4em;
-  margin-bottom: 0.2em;
+  margin-bottom: 0;
 }
-p.blog-author {
+p.blog-date {
   margin-bottom: 0.2em;
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-style: italic;
 }
 

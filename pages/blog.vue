@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Robert's Blog</h1>
+    <h1 class="blog-header">Robert's Blog</h1>
     <div class="display-area">
       <BlogPreview v-for="post in posts" :postData="post" :key="post.name" />
     </div>
@@ -27,8 +27,8 @@ export default {
   padding: 80px 1.5em 0;
 }
 
-h1 {
-  text-align: center;
+.blog-header:after {
+  width: 7.6em;
 }
 
 @media only screen and (min-width: 768px) {

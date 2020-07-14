@@ -58,7 +58,7 @@ export default {
 }
 
 .contact-section h1:after {
-  width: 6.15em;
+  width: 8em;
 }
 
 // Styling for the form

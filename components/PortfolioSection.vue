@@ -72,7 +72,7 @@ export default {
 }
 
 .portfolio-section h1:after {
-  width: 4.1em;
+  width: 6.5em;
 }
 
 //Media Queries

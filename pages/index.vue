@@ -49,7 +49,7 @@ h1:after {
   display: block;
   height: 4px;
   position: relative;
-  width: 8.6em;
+  width: 8.7em;
 }
 
 .blog-header {
@@ -75,14 +75,8 @@ h1:after {
     margin-bottom: 1.5em;
   }
 
-  h1 {
-    text-align: center;
-    margin-top: 0.65em;
-  }
-
   h1:after {
-    left: 50%;
-    transform: translateX(-50%);
+    width: 10em;
   }
 }
 
