@@ -72,14 +72,7 @@ export default {
 }
 
 .portfolio-section h1:after {
-  width: 3em;
-}
-
-.title-underline {
-  width: 7.5em;
-  height: 2px;
-  margin: 0 0 2.5em;
-  background: $secondary-color;
+  width: 4.1em;
 }
 
 //Media Queries

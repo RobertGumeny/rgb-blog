@@ -44,12 +44,12 @@ h1 {
 
 h1:after {
   background: $secondary-color;
-  bottom: 5px;
+  bottom: -2px;
   content: "";
   display: block;
   height: 4px;
   position: relative;
-  width: 6.2em;
+  width: 8.6em;
 }
 
 .blog-header {

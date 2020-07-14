@@ -37,7 +37,6 @@ export default {
 
 
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
 .hero-section {
   font-family: "Open Sans", sans-serif;
   background: url("../assets/images/hero-img-2.jpg") top center;
@@ -52,7 +51,7 @@ p.name {
   margin-top: -5px;
   font-size: 2.4em;
   font-weight: bold;
-  font-family: "Oswald", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 p.name span {
@@ -69,7 +68,7 @@ p.name span {
 }
 
 .intro {
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 .intro strong {
