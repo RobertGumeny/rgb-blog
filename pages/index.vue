@@ -1,53 +1,22 @@
 <template>
   <div>
     <Hero id="hero" />
-    <div class="container">
-      <h1 class="blog-header">Latest Blog Posts</h1>
-      <section class="blog-section">
-        <BlogPreview
-          v-for="post in posts"
-          :postData="post"
-          :postDate="post.dateFormatted"
-          :key="post.name"
-        />
-      </section>
-    </div>
   </div>
 </template>
 
 <script>
-import Hero from "../components/Hero"
-import BlogPreview from "../components/BlogPreview"
-import { getPreviewPosts } from '../api/posts'
+import Hero from "../components/Hero";
 
 export default {
-  async asyncData() {
-    const posts = await getPreviewPosts();
-    posts.map(post => {
-      const options = {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
-      };
-
-      post.dateFormatted = new Intl.DateTimeFormat('en-US', options)
-        .format(new Date(post.published_at));
-    });
-    return { posts: posts };
-  },
   data() {
-    return {
-    }
+    return {};
   },
-  mounted() {
-  },
-  methods: {
-  },
+  mounted() {},
+  methods: {},
   components: {
-    Hero,
-    BlogPreview
+    Hero
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -65,10 +34,6 @@ h1:after {
   height: 4px;
   position: relative;
   width: 8.7em;
-}
-
-.blog-header {
-  margin-bottom: 1em;
 }
 
 .container {

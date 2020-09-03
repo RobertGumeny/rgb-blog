@@ -7,10 +7,6 @@
         </li>
         <li>|</li>
         <li>
-          <nuxt-link to="/blog">Blog</nuxt-link>
-        </li>
-        <li>|</li>
-        <li>
           <nuxt-link to="/#contact">Contact</nuxt-link>
         </li>
       </ul>
@@ -21,19 +17,17 @@
   </footer>
 </template>
 
-
 <script>
 export default {
-  name: 'footer',
+  name: "site_footer",
   data() {
-    return {}
+    return {};
   },
   computed: {},
   methods: {},
   components: {}
-}
+};
 </script>
-
 
 <style lang="scss" scoped>
 footer {

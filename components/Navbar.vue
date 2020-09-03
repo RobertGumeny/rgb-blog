@@ -16,9 +16,6 @@
                 <nuxt-link to="/portfolio">Portfolio</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/blog">Blog</nuxt-link>
-              </li>
-              <li>
                 <nuxt-link to="/contact">Contact</nuxt-link>
               </li>
             </ul>
@@ -29,19 +26,17 @@
   </div>
 </template>
 
-
 <script>
 export default {
-  name: 'navbar',
+  name: "navbar",
   data() {
-    return {}
+    return {};
   },
   computed: {},
   methods: {},
   components: {}
-}
+};
 </script>
-
 
 <style lang="scss" scoped>
 .logo {
