@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <li v-for="post of posts" :key="post.slug">
-      <nuxt-link :to="post.slug">{{ post.title }}</nuxt-link>
+      <nuxt-link :to="{ path: post.slug }">{{ post.title }}</nuxt-link>
+      <p>{{ post.description }}</p>
     </li>
   </div>
 </template>
@@ -20,7 +21,17 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  padding: 80px 1.5em 0;
+  padding: 180px;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: $primary-color;
+  font-weight: bold;
 }
 
 h1 {
